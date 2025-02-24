@@ -118,15 +118,16 @@ a:hover {
     padding: 1rem 1.5rem;
 }
 
-.visit-us {
+.action-link-1 {
     display: inline-block;
     background-color: #F26628;
     color: #1B2938;
     padding: 0.75rem 2rem;
     border-radius: 2rem;
+    transition: all 0.35s;
 }
 
-.visit-us:hover {
+.action-link-1:hover {
     background-color: hsla(18, 89%, 55%, 0.8);
     color: #1B2938;
 }
@@ -151,16 +152,21 @@ a:hover {
     font-size: 2.5rem;
 }
 
-.hero-read-more {
-    margin-top: 3rem;
+.hero-p {
+    margin-bottom: 2rem;
+}
+
+.action-link-2 {
+    display: inline-block;
     background-color: #1B2938;
     padding: 1rem 2rem;
     border-radius: 2rem;
     color: #fff;
+    transition: all 0.35s;
 }
 
-.hero-read-more:hover {
-    background-color: #1b2938de;  
+.action-link-2:hover {
+    background-color: hsla(211, 35%, 16%, 0.95);  
 }
 
 
@@ -211,8 +217,43 @@ a:hover {
     border-color: #F26628;
 }
 
+.about-bg {
+    padding: 3rem 1rem;
+    background-image: radial-gradient(
+        circle farthest-side at left center, 
+        hsl(0, 0%, 100%, 0.95) 0%,
+        hsla(0, 0%, 100%, 0.75) 55%,
+        hsla(0, 0%, 0%, 0) 100%
+        ), url('images/photo1.jpg');
+    background-size: cover;
+    background-position: center;
+}
 
+.about {
+    width: 40%;
+}
 
+.worship-article-h2-p {
+    font-weight: 600;
+    font-size: 1.25rem;
+    margin-bottom: -0.5rem;
+    color: #1B2938;
+}
+
+.worship-article-h2 {
+    width: fit-content;
+    padding: 0.25rem 0;
+    font-size: 2rem;
+    color: #F26628;
+    margin-left: -3px;
+    margin-bottom: 1rem;
+    border: 3px solid;
+    border-image: linear-gradient(to right, #1B2938, #0000) 0 0 1;
+}
+
+.worship-article-p {
+    margin-bottom: 1rem;
+}
 
 /* FOOTER */
 
@@ -247,7 +288,6 @@ a:hover {
     flex-flow: row wrap;
     gap: 2rem;
 }
-
 
 
 .footer-h4 {
@@ -293,10 +333,16 @@ a:hover {
         background-color: transparent;
         border: none;
         margin-right: 1rem;
+        cursor: pointer;
+        transition: all 0.35s;
+    }
+
+    .mobile-menu:hover {
+        background-color: #3332;
     }
 
     .mobile-menu:active {
-        background-color: #2222;
+        background-color: #1115;
     }
 
     .nav {
@@ -314,8 +360,6 @@ a:hover {
 
     }
 
-  
-
     .close-menu {
         display: block;
         position: absolute;
@@ -327,10 +371,18 @@ a:hover {
         top: 1rem;
         right: 1rem;
         border: none;
+        transition: all 0.35s;
+        cursor: pointer;
+    }
+
+    .close-menu:hover {
+        background-color: #f26528e1;
+        font-size: 2.15rem;
     }
 
     .close-menu:active {
         background-color: #F26628bb;
+        font-size: 1.5rem;
     }
 
     .show-menu {
@@ -379,6 +431,19 @@ a:hover {
     .fixed-header {
         position: relative;
     }
+
+    .about-bg {
+        background-image: radial-gradient(
+            circle farthest-side at left center, 
+            hsl(0, 0%, 100%, 0.95) 0%,
+            hsla(0, 0%, 100%, 0.75) 65%,
+            hsla(0, 0%, 100%, 0.45) 100%
+            ), url('images/photo1.jpg');
+    }
+
+    .about {
+        width: 100%;
+    }
 }
 
 @media screen and (max-height: 576px) {
@@ -395,8 +460,8 @@ a:hover {
         margin-top: 3rem;
         font-size: 2rem;
     }
-    .hero-read-more {
-        margin-top: 1rem;
+    .hero-p {
+        margin-bottom: 1rem;
     }
 
     .nav-ul {
