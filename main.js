@@ -6,12 +6,11 @@ const observer = new IntersectionObserver(entry => {
 
     const logo = document.querySelector("[data-main-logo]")
 
-    if (element.isIntersecting) {
-        
+    /* if (element.isIntersecting) {
         logo.setAttribute("src", "logo-color.png")
     } else {
         logo.setAttribute("src", "logo.png")
-    }
+    } */
 
     console.log(element)
 
