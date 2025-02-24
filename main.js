@@ -10,7 +10,7 @@ const observer = new IntersectionObserver(entry => {
         logo.setAttribute("src", "logo-color.png")
     } else {
         logo.setAttribute("src", "logo.png")
-    } */
+    }*/
 
     console.log(element)
 
