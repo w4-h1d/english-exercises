@@ -4,8 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Acme Co.</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" href="/images/sky.webp" as="image" type="image/webp">
     <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style-mini.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <script src="main.js" defer></script>
 </head>
@@ -29,7 +32,7 @@
                 <button type="button" class="close-menu center" data-close-menu>&times;</button>
                 <ul class="nav-ul">
                     <li><a href="#" data-menu-opt>Home</a></li>
-                    <li><a href="#" data-menu-opt>Blog</a></li>
+                    <!-- <li><a href="#" data-menu-opt>Blog</a></li> -->
                     <li><a href="#events" data-menu-opt>Event</a></li>
                     <li><a href="#donate" data-menu-opt>Donate</a></li>
                     <li><a href="#about" data-menu-opt>About</a></li>
@@ -89,48 +92,80 @@
             </div>
         </section>
 
-        <section class="hide">
+        <section class="services-bg center">
             <div id="visit" class="scroll-point"></div>
-            <h2>Our Services</h2>
-            <p>We're on a mission to solve the problems and gain resources for a new generation.</p>
+            <div class="max-width services center">
+                <p class="article-h2-p">Serving Humanity</p>
+                <h2 class="article-h2">Our Services</h2>
+                
+                <div class="service-div center">
+                    <p class="blue bold text-center service-desc">We're on a <span class="orange">mission</span> to solve the problems and gain resources for a new generation.</p>
 
-            <div>
-                <article>
-                    <i class="fa-solid fa-book-quran"></i>
-                    <h3>Quran Learning</h3>
-                    <p>Quran Teaching dolor sit amet, coteudtur adipisicing elit, sed do eiusmod tempor incididunt ut labore et.</p>
-                </article>
-
-                <article>
-                    <i class="fa-solid fa-hand-holding-heart"></i>
-                    <h3>Charity Service</h3>
-                    <p>Charity Events dolor sit amet, coteudtur adipisicing elit, sed do eiusmod tempor incididunt ut labore et.</p>
-                </article>
-
-                <article>
-                    <i class="fa-solid fa-mosque"></i>
-                    <h3>Mosque Development</h3>
-                    <p>Mosque Renovation dolor sit amet, coteudtur adipisicing elit, sed do eiusmod tempor incididunt ut labore et.</p>
-                </article>
-
-                <article>
-                    <i class="fa-solid fa-handshake-simple"></i>
-                    <h3>Help Poors</h3>
-                    <p>Help Your fellows dolor sit amet, coteudtur adipisicing elit, sed do eiusmod tempor incididunt ut labore et.</p>
-                </article>
+                    <div class="service-articles">
+                        <article class="service-article">
+                            <div class="service-icon center blue">
+                                <i class="fa-solid fa-book-quran"></i>
+                            </div>
+                            <div class="service-article-text">
+                                <h3 class="orange">Quran Learning</h3>
+                                <p class="small">Quran Teaching dolor sit amet, coteudtur adipisicing elit, sed do eiusmod tempor incididunt ut labore et.</p>
+                            </div>
+                        </article>
+    
+                        <article class="service-article">
+                            <div class="service-icon center blue">
+                                <i class="fa-solid fa-hand-holding-heart"></i>
+                            </div>
+                            <div class="service-article-text">
+                                <h3 class="orange">Charity Service</h3>
+                                <p class="small">Charity Events dolor sit amet, coteudtur adipisicing elit, sed do eiusmod tempor incididunt ut labore et.</p>
+                            </div>
+                        </article>
+    
+                        <article class="service-article">
+                            <div class="service-icon center blue">
+                                <i class="fa-solid fa-mosque"></i>
+                            </div>
+                            <div class="service-article-text">
+                                <h3 class="orange">Mosque Development</h3>
+                                <p class="small">Mosque Renovation dolor sit amet, coteudtur adipisicing elit, sed do eiusmod tempor incididunt ut labore et.</p>
+                            </div>
+                        </article>
+    
+                        <article class="service-article">
+                            <div class="service-icon center blue">
+                                <i class="fa-solid fa-handshake-simple"></i>
+                            </div>
+                            <div class="service-article-text">
+                                <h3 class="orange">Help Poors</h3>
+                                <p class="small">Help Your fellows dolor sit amet, coteudtur adipisicing elit, sed do eiusmod tempor incididunt ut labore et.</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
             </div>
         </section>
 
-        <section id="donate" class="hide">
-            <p>Support Us,</p>
-            <h2>We need your help.</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis officiis eaque non itaque dolorem consectetur saepe accusamus sint, minus debitis inventore, aliquid cum culpa fugiat accusantium ex odio! Officiis, voluptates.</p>
-            <div>
-                <div>Circle 1</div>
-                <div>Circle 2</div>
-                <div>Circle 3</div>
+        <section class="donate-bg center">
+            <div class="donate-bg-color"></div>
+            <div id="donate" class="scroll-point"></div>
+            <div class="max-width center donate">
+                <p class="article-h2-p"><span class="white">Support Us,</span></p>
+                <h2 class="article-h2" style="--border-color: #fff;"><span class="blue">We need your help.</span></h2>
+                <p class="white margin-top-bottom">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis officiis eaque non itaque dolorem consectetur saepe accusamus sint, minus debitis inventore, aliquid cum culpa fugiat accusantium ex odio! Officiis, voluptates.</p>
+                <div class="donuts center">
+                    <div class="donut center"  style="--percentage: 46%;">
+                        <div class="percentage center bold blue text-center">46%<br>Mosque</div>
+                    </div>
+                    <div class="donut center"  style="--percentage: 56%;">
+                        <div class="percentage center bold blue text-center">56%<br>Expenses</div>
+                    </div>
+                    <div class="donut center"  style="--percentage: 75%;">
+                        <div class="percentage center bold blue text-center">75%<br>Feed Hungry</div>
+                    </div>
+                </div>
+                <a href="" class="action-link-1 bold">Donate Now</a>
             </div>
-            <a href="">Donate Now</a>
         </section>
 
         <section class="experts-bg center">
@@ -180,7 +215,7 @@
                     <article class="card">
                         <a href="">
                             <div class="card-img">
-                                <img src="https://plus.unsplash.com/premium_photo-1668024966086-bd66ba04262f?q=80&w=892&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" width="600" loading="lazy" class="event-photo">
+                                <img src="https://plus.unsplash.com/premium_photo-1668024966086-bd66ba04262f?q=80&w=892&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" width="509" height="300" loading="lazy" class="event-photo">
                             </div>
                             <h3  class="blue event-h3">Islamic Teaching Event</h3>
                         
@@ -193,7 +228,7 @@
                     <article class="card">
                         <a href="">
                             <div class="card-img">
-                                <img src="https://images.unsplash.com/photo-1614586125858-e695dd97d1b6?q=80&w=903&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" width="600" loading="lazy" class="event-photo">
+                                <img src="https://images.unsplash.com/photo-1614586125858-e695dd97d1b6?q=80&w=903&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" width="509" height="300" loading="lazy" class="event-photo">
                             </div>
                             <h3 class="blue event-h3">Islamic Teaching Event</h3>
                         
@@ -244,7 +279,7 @@
         <div class="max-width">
             <div class="footer-main">
                 <div class="footer-logo">
-                    <a href="/"><img src="images/logo.png" alt="Acme Co. Logo" width="350" height="100" class="logo"></a>
+                    <a href="/"><img src="images/logo.png" alt="Acme Co. Logo" width="350" height="100" class="logo" loading="lazy"></a>
                     <p class="small">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut incidunt illum qui rem consequatur dolor dicta molestiae ipsam maxime voluptas suscipit.</p>
         
                 </div>
