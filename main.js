@@ -1,4 +1,4 @@
-const header = document.querySelector("[data-header]");
+/* const header = document.querySelector("[data-header]");
 const observer = new IntersectionObserver(entry => {
     const element = entry[0]
 
@@ -10,7 +10,7 @@ const observer = new IntersectionObserver(entry => {
         logo.setAttribute("src", "logo-color.png")
     } else {
         logo.setAttribute("src", "logo.png")
-    }*/
+    }
 
     console.log(element)
 
@@ -18,7 +18,7 @@ const observer = new IntersectionObserver(entry => {
     threshold: 0,
 })
 
-observer.observe(document.querySelector("[data-page-top]"));
+observer.observe(document.querySelector("[data-page-top]")); */
 
 const menu = document.querySelector("[data-navigation]");
 const menuList = document.querySelectorAll("[data-menu-opt]");

@@ -12,7 +12,7 @@
 <body>
     <!--####################### HEADER ######################-->
     <div data-page-top></div>
-    <header class="header-bg center" data-header>
+    <header class="header-bg center fixed-header" data-header>
         <div class="max-width header">
             <a href="/"><img src="images/logo-color.png" alt="Acme Co. Logo" width="350" height="100" class="logo" data-main-logo></a>
 
@@ -26,7 +26,7 @@
             </button>
             
             <nav class="nav" data-navigation>
-                <button type="button" class="close-menu" data-close-menu>&times;</button>
+                <button type="button" class="close-menu center" data-close-menu>&times;</button>
                 <ul class="nav-ul">
                     <li><a href="#" data-menu-opt>Home</a></li>
                     <li><a href="#" data-menu-opt>Blog</a></li>
@@ -77,19 +77,20 @@
             </div>
         </section>
 
-        <section id="about" class="about-bg center">
+        <section class="about-bg center">
+            <div id="about"  class="scroll-point"></div>
             <div class="max-width">
                 <div class="about">
-                    <p class="worship-article-h2-p">About</p>
-                    <h2 class="worship-article-h2">Our Center</h2>
+                    <p class="article-h2-p">About</p>
+                    <h2 class="article-h2">Our Center</h2>
                     <p class="small worship-article-p">Established in 1987 to serve people who are in need of funds or education. We are developing dolor sit amet. Click edit button to change this text. I am text block. Click edit button to change this text. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus,Consectetur adipiscing elit.</p>
                     <a href="#" class="action-link-2">Learn More</a>
                 </div>
             </div>
         </section>
 
-        <div class="hide">
-        <section id="visit">
+        <section class="hide">
+            <div id="visit" class="scroll-point"></div>
             <h2>Our Services</h2>
             <p>We're on a mission to solve the problems and gain resources for a new generation.</p>
 
@@ -120,7 +121,7 @@
             </div>
         </section>
 
-        <section id="donate">
+        <section id="donate" class="hide">
             <p>Support Us,</p>
             <h2>We need your help.</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis officiis eaque non itaque dolorem consectetur saepe accusamus sint, minus debitis inventore, aliquid cum culpa fugiat accusantium ex odio! Officiis, voluptates.</p>
@@ -132,73 +133,107 @@
             <a href="">Donate Now</a>
         </section>
 
-        <section>
-            <p>Our Expert</p>
-            <h2>Islamic Scholars</h2>
+        <section class="experts-bg center">
+            <div class="max-width center experts">
+                <p class="article-h2-p">Our Expert</p>
+                <h2 class="article-h2">Islamic Scholars</h2>
+                <p class="p max-500">Experts ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos aspernatur inventore maiores eos dicta maxime, similique iste sequi facilis hic.</p>
 
-            <div>
-               <article>
-                    <h3>Sheikh Salim Suleman</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                    <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg" alt="">
-               </article>
+                <div class="scholars">
+                    <article class="scholar">
+                            <div class="scholar-info center">
+                                <h3 class="scholar-name orange">Sheikh Salim Suleman</h3>
+                                <p class="scholar-desc white small">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            </div>
+                            <img src="images/gatto.jpeg" loading="lazy" alt="" class="scholar-img">
+                    </article>
 
-               <article>
-                    <h3>Sheikh Jabbar Uddin</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                    <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg" alt="">
-               </article>
+                    <article class="scholar">
+                            <div class="scholar-info center">
+                                <h3 class="scholar-name orange">Sheikh Jabbar Uddin</h3>
+                                <p class="scholar-desc white small">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            </div>
+                            <img src="images/cool.jpg" loading="lazy" alt="" class="scholar-img">
+                    </article>
 
-               <article>
-                    <h3>Sheikh Hasan Faloodi</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                    <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg" alt="">
-               </article> 
-            </div>
-        </section>
-
-        <section id="events" class="hide">
-            <h2>Upcoming Events</h2>
-            <p>There are a bunch of events coming up!</p>
-            <a href="">
-                <div>
-                    <img src="https://plus.unsplash.com/premium_photo-1668024966086-bd66ba04262f?q=80&w=892&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" width="600">
-                    <h3>Islamic Teaching Event</h3>
-                    <p><time datetime="2024-10-07">07/10/2024</time> <time datetime="00:00">12:00 AM</time> to <time datetime="14:00">2:00 PM</time></p>
-                    <address>Central Mosque, New Town, Saham</address>
+                    <article class="scholar">
+                            <div class="scholar-info center">
+                                <h3 class="scholar-name orange">Sheikh Hasan Faloodi</h3>
+                                <p class="scholar-desc white small">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            </div>
+                            <img src="images/hijabi.jpg" loading="lazy" alt="" class="scholar-img">
+                    </article> 
                 </div>
-
-                <div>
-                    <img src="https://images.unsplash.com/photo-1614586125858-e695dd97d1b6?q=80&w=903&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" width="600">
-                    <h3>Islamic Teaching Event</h3>
-                    <p><time datetime="2024-10-10">10/10/2024</time> <time datetime="00:00">12:00 AM</time> to <time datetime="14:00">2:00 PM</time></p>
-                    <address>Central Mosque, New Town, Saham</address>
-                </div>    
-            </a>
+            </div>
         </section>
 
-        <section>
-            <p>What Our</p>
-            <h2>Donator Say</h2>
+        
 
-            <div>
-                <div><img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg" alt=""></div>
-                <h3>Abu Hassam Adam</h3>
-                <q>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed repellendus quidem ut. Placeat corporis ab similique illum at aut impedit.</q>
+        <section  class="events-bg center">
+            <div id="events" class="scroll-point"></div>
+            <div class="events-bg-color"></div>
+            <div class="max-width events">
+                <h2 class="article-h2"><span class="blue">Upcoming</span> Events</h2>
+                <p>There are a bunch of events coming up!</p>
+
+                <div class="event-articles">
+                    <article class="card">
+                        <a href="">
+                            <div class="card-img">
+                                <img src="https://plus.unsplash.com/premium_photo-1668024966086-bd66ba04262f?q=80&w=892&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" width="600" loading="lazy" class="event-photo">
+                            </div>
+                            <h3  class="blue event-h3">Islamic Teaching Event</h3>
+                        
+                            <p class="small orange"><time datetime="2024-10-07">07/10/2024</time></p>
+                            <p class="small p"><time datetime="00:00">12:00 AM</time> to <time datetime="14:00">2:00 PM</time></p>
+                            <address class="small p">Central Mosque, New Town, Saham</address>
+                        </a>
+                    </article>
+    
+                    <article class="card">
+                        <a href="">
+                            <div class="card-img">
+                                <img src="https://images.unsplash.com/photo-1614586125858-e695dd97d1b6?q=80&w=903&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" width="600" loading="lazy" class="event-photo">
+                            </div>
+                            <h3 class="blue event-h3">Islamic Teaching Event</h3>
+                        
+                            <p class="small orange"><time datetime="2024-10-10">10/10/2024</time></p>
+                            <p class="small p"><time datetime="00:00">12:00 AM</time> to <time datetime="14:00">2:00 PM</time></p>
+                            <address class="small p">Central Mosque, New Town, Saham</address>
+                        </a>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="donator-bg center">
+            <div class="max-width donator">
+                <p class="article-h2-p">What Our</p>
+                <h2 class="article-h2">Donator Say</h2>
+
+                <div class="comment center">
+                    <div class="profile">
+                        <img src="images/abu.webp" alt="" width="300" height="400" loading="lazy" class="profile-img">
+                    </div>
+                    <h3 class="article-h2-p">ABU HASSAM ADAM</h3>
+                    <p><q class="quote">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed repellendus quidem ut. Placeat corporis ab similique illum at aut impedit.</q></p>
+                </div>
             </div>
         </section>
 
 
-        <section>
-            <h2>Newsletter</h2>
-            <p>Subscribe to our mailing list</p>
+        <section class="newsletter-bg center">
+            <div class="newsletter-bg-color"></div>
+            <div class="newsletter">
+                <h2 class="newsletter-h2">Newsletter</h2>
+                <p>Subscribe to our mailing list</p>
 
-            <form action="">
-                <input type="email" placeholder="Enter your email" required>
-                <button>Sign Up</button>
-            </form>
+                <form action="https://formspree.io/f/mqakeebr" method="post" class="form">
+                    <input type="email" name="email" placeholder="Enter your email" required class="form-input">
+                    <button class="form-submit">SIGN UP</button>
+                </form>
+            </div>
         </section>
-        </div>
     </main>
 
 
